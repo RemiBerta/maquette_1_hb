@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Work Sans";
+}
+
+.flex {
+    display: flex;
+}
+
+p {
+    font-size: 14px;
+    color: rgb(79, 79, 79);
+}
+
+body {
+
+    h1,
+    h2 {
+        font-family: "Amatic SC", sans-serif;
+    }
+
+    h1 {
+        @media screen and (max-width: 920px) {
+            margin: 0 90px;
+        }
+    }
+
+    .flex {
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url(./img/lyon.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 150px;
+        padding-bottom: 150px;
+
+        h1 {
+            color: white;
+            font-size: 55px;
+        }
+
+        ul {
+            justify-content: center;
+            list-style-type: none;
+
+            li a {
+                color: white;
+                margin: 10px 8px 0 0;
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            color: white;
+            margin-top: 10px;
+
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                margin: 10px 100px;
+            }
+        }
+    }
+
+    main {
+        margin: 20px 0;
+
+        #intro {
+            margin: 20px 25px;
+
+            img {
+                width: 300px;
+                height: 160px;
+
+            }
+
+            div {
+                margin: 35px;
+
+                h2 {
+                    margin-bottom: 10px;
+
+                    @media screen and (max-width: 768px) {
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    @media screen and (max-width: 768px) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        #lilcards {
+            width: 100%;
+
+            h2 {
+                text-align: center;
+            }
+
+            div {
+                justify-content: space-evenly;
+
+                .card {
+                    text-align: center;
+                    width: 24%;
+                    border: 1px solid rgb(181, 181, 181);
+                    margin: 20px;
+                    padding: 15px 15px 70px 15px;
+                    color: rgb(121, 121, 121);
+                    box-shadow: 0px 5px 7px -1px rgba(126, 126, 126, 0.76);
+
+                    @media screen and (max-width: 920px) {
+                        width: 80%;
+                    }
+
+                    img {
+                        object-fit: cover;
+                        width: 230px;
+                        height: 230px;
+                        margin: 15px 0;
+
+                        @media screen and (max-width: 920px) {
+                            width: 80%;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        #restaurants {
+            h2 {
+                text-align: center;
+                margin: 25px 0;
+            }
+
+            #flexBigCard {
+                justify-content: space-around;
+
+                .bigCard {
+                    width: 45%;
+                    text-align: center;
+
+                    @media screen and (max-width: 920px) {
+                        width: 100%;
+                    }
+
+                    img {
+                        object-fit: cover;
+                        width: 350px;
+                        height: 350px;
+                        margin-top: 15px;
+
+                        @media screen and (max-width: 920px) {
+                            width: 80%;
+                        }
+                    }
+
+                    h3 {
+                        margin: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        padding: 35px 0;
+        background-color: rgb(71, 71, 71);
+        color: white;
+
+        #contact {
+            justify-content: space-evenly;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: row;
+            }
+
+            h4 {
+                margin-bottom: 17px;
+            }
+
+            p,
+            a {
+                color: white;
+                margin-bottom: 15px;
+
+            }
+
+            h4,
+            p,
+            a {
+                @media screen and (max-width: 768px) {
+                    margin-left: 15px;
+                }
+            }
+
+        }
+
+        #copyright {
+            margin: 0;
+            width: 100%;
+            background-color: rgb(40, 40, 40);
+            text-align: center;
+            padding: 25px 0;
+
+            p {
+                color: white;
+            }
+        }
+    }
+}
